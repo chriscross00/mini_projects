@@ -1,0 +1,5 @@
+https://github.com/faif/python-patterns
+
+https://www.reddit.com/r/learnpython/comments/40q6xs/where_do_i_learn_advanced_oop_concepts_in_python/
+
+https://realpython.com/primer-on-python-decorators/
