@@ -1,36 +1,14 @@
-from decorators import do_twice, a_dec
+from decorators import timer
 
-@do_twice
-def whee():
-    print("Whee!")
 
-@do_twice
-def greet(name):
-    print(f"hello {name}")
+@timer
+def waste_time(num):
+    for _ in range(num):
+        sum([i**2 for i in range(10000)])
 
-@do_twice
-def return_greeting(name):
-    print("creating greeting")
-    return f"hi {name}"
-
-@a_dec
-def first_func():
-    """docstrings for the first function"""
-
-    print("first function")
-
-@a_dec
-def second_func():
-    """docstrings for the second function"""
-
-    print("second function")
 
 def main():
-    print(first_func.__name__)
-    print(first_func.__doc__)
-
-    print(f"\n\n{second_func.__name__}\n{second_func.__doc__}")
-    help(second_func)
+    waste_time(6)
 
 if __name__ == '__main__':
     print("startup message")
