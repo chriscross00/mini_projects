@@ -10,8 +10,9 @@ def waste_time(num):
 
 def main():
     c1 = Circle(5)
-    print(c1.radius())
-    print(c1.__dict__)
+    print(c1.area)
+    c1.radius = 0
+    print(c1.area)
 
 if __name__ == '__main__':
     print("startup message")
