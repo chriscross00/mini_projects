@@ -1,4 +1,5 @@
 from decorators import timer
+from fancy_decorators import Circle
 
 
 @timer
@@ -8,9 +9,10 @@ def waste_time(num):
 
 
 def main():
-    waste_time(6)
+    c1 = Circle(5)
+    print(c1.radius())
+    print(c1.__dict__)
 
 if __name__ == '__main__':
     print("startup message")
-
     main()
