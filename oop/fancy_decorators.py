@@ -1,5 +1,3 @@
-# https://realpython.com/instance-class-and-static-methods-demystified/
-
 class Circle:
 
     def __init__(self, radius):
