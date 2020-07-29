@@ -1,5 +1,6 @@
 from fancy_decorators import Circle
-import class_decorators
+from decorators import debug, make_greeting
+import math
 
 def main():
     # c1 = Circle(5)
@@ -7,11 +8,8 @@ def main():
     # c1.radius = 0
     # print(c1.area)
     # cd = class_decorators.learn_class()
-
-    print(class_decorators.learn_class.class_method())
-    print(class_decorators.learn_class.static_method())
-    print(class_decorators.learn_class.method())
+    # a = debug(math.factorial)
 
 if __name__ == '__main__':
-    print("startup message")
+    print("startup message\n\n")
     main()
